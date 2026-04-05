@@ -2,20 +2,15 @@
     position: fixed;
     text-align: center;
     justify-content: center;
-    
-    /* bottom: 48px; */
     top: 50%;
     left: 40%;
     display: flex;
     border-radius: 15px;
     gap: 5px;
-
-
     background-color: aliceblue;
     padding: 5px;
     margin: 3px;
     color: white;
-
 }
 
 button{
@@ -26,9 +21,6 @@ button{
     margin: 3px;
     border-radius: 10px;
     box-shadow:1px;
-
-
-
 }
 
 #red{
