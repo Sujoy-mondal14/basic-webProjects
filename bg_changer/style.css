@@ -1,0 +1,60 @@
+.toggle{
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    
+    /* bottom: 48px; */
+    top: 50%;
+    left: 40%;
+    display: flex;
+    border-radius: 15px;
+    gap: 5px;
+
+
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 3px;
+    color: white;
+
+}
+
+button{
+     display: flex;
+     text-align: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 10px;
+    box-shadow:1px;
+
+
+
+}
+
+#red{
+ background-color: red;
+    color: aliceblue;
+    border-color: red;   
+}
+
+#green{
+     background-color: rgb(0, 255, 0);
+    color: rgb(0, 2, 4);
+    border-color: rgb(55, 255, 0);
+}
+#yellow{
+    background-color: yellow;
+    color: black;
+    border-color: yellow;
+}
+#blue{
+    background-color: blue;
+    color: white;
+    border-color: blue;
+
+}
+#black{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
