@@ -1,0 +1,49 @@
+.main , .text {
+    display: flex;
+    color: aliceblue;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left:40%;
+    margin: 3px;
+    padding: 2px;
+    background-color: rgb(43, 41, 41);
+    border-radius: 5px;
+}
+
+.txtSection , .change{
+    padding: 3px;
+    margin: 4px;
+    
+}
+
+#button{
+    background-color: darkcyan;
+    border-radius: 8px;
+    border-color: darkcyan;
+    transition: all 0.3s ease;
+}
+#button:hover {
+    background-color: rgb(9, 234, 234);
+    border-color:  rgb(9, 234, 234);
+}
+#button:active{
+background-color: #fafafa;
+  transform: scale(0.95); 
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
+}
+
+#inputText{
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 1px;
+}
+
+#change{
+    display: flex;
+    text-shadow: 3px;
+
+}
