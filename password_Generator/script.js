@@ -4,7 +4,7 @@ const checkboxChar = document.getElementById('char')
 const length = document.getElementById('length')
 const txt = document.getElementById('inputText')
 const button = document.getElementById('button')
-
+const lengthValueText = document.getElementById('lengthValue')
 
 
 
@@ -29,6 +29,7 @@ function passwordGenerator(){
     }
 
     txt.value = password;
+    lengthValueText.innerText = lengthValue
 }
 
 // handeling events
@@ -48,8 +49,8 @@ button.addEventListener('click' , async (e)=>{
 
         await navigator.clipboard.writeText(txtValue)
 
-        button.innerText = 'Copied !'
-        setTimeout(()=> button.innerText = 'copy' , 2000)
+        button.innerText = 'Copied'
+        setTimeout(()=> button.innerText = 'Copy' , 2000)
     }catch(err){
         console.log("error to copy");
         
