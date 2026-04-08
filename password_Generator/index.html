@@ -9,43 +9,45 @@
 
 
 <body style="background-color: black;">
-    <div class="text">
-        <h1>Password Generator</h1>
-    </div>
+    <div class="content">
+        <div class="text">
+            <h1>Password Generator</h1>
+        </div>
 
-    <div class="main">
+        <div class="main">
 
-       <div class="txtSection">
-            <input id="inputText"  
-                type="text"
-                placeholder="Password"
-                readonly 
+        <div class="txtSection">
+                <input id="inputText"  
+                    type="text"
+                    placeholder="Password"
+                    readonly 
+                >
+                <button id="button" >Copy</button>
+        </div>
+
+        <div class="change">
+            <label for="length">Length : <span id="lengthValue">5</span></label>
+            <input type="range" 
+                id="length"
+                max="100"
+                min="0"
+                value='5'
             >
-            <button id="button" >Copy</button>
-       </div>
 
-       <div class="change">
-        <label for="length">Length : <span id="lengthValue">5</span></label>
-        <input type="range" 
-            id="length"
-            max="100"
-            min="0"
-            value='5'
-        >
+            <label for="number">Number</label>
+            <input type="checkbox" 
+                id="number"
+            >
 
-        <label for="number">Number</label>
-        <input type="checkbox" 
-            id="number"
-        >
+            <label for="char">Character</label>
+            <input type="checkbox"
+                id="char"
+            >
 
-        <label for="char">Character</label>
-        <input type="checkbox"
-            id="char"
-        >
+        </div>
 
-       </div>
-
-    </div>
+        </div>
+    </div>    
     
 </body>
 
