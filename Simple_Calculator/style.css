@@ -1,0 +1,42 @@
+.head{
+    color: white;
+    background-origin: 5px;
+    padding: 10px;
+    background-color: rgb(119, 25, 129);
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+
+}
+
+/* display Section */
+.display{
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    padding: 30px;
+    text-align: right;
+    border-radius: 15px;
+    border-color: black;
+    
+}
+
+.previous{
+    color: rgb(65, 50, 53);
+    font-size: 15px;
+}
+.current{
+    font-size: 22px;
+}
+
+/* keyboard / Numbers section */
+.numbers{
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;    
+}
