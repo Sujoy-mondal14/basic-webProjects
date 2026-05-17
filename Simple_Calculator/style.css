@@ -60,3 +60,7 @@ button{
     text-align: center;
     display: fixed;
 }
+
+button:active {
+    transform: scale(0.95);
+}
