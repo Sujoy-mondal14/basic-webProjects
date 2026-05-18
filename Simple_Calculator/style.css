@@ -1,66 +1,104 @@
-.head{
+/* Base reset for clean sizing */
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* 
+  NEW: Wrap your whole app in a <div class="calculator"> 
+  This keeps everything perfectly aligned in one neat box!
+*/
+.calculator {
+    width: 350px;       /* Fixed width so it doesn't squish */
+    margin: 10% auto;   /* 'auto' perfectly centers it left-to-right */
+    background-color: #e0e0e0; /* Slight background for the whole device */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #222;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3); /* Adds a nice drop shadow */
+}
+
+/* Head Section */
+.head {
     color: white;
-    background-origin: 5px;
-    padding: 10px;
     background-color: #336699;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
-    text-shadow: 2px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 10%;
-    border: 5px solid whitesmoke;
-
+    border: 3px solid whitesmoke;
+    margin-bottom: 15px;
+    /* Fixed text-shadow */
+    text-shadow: 1px 1px 2px black; 
 }
 
-/* display Section */
-.display{
-    margin-top: 15px;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-right: 10px;
-
+/* Display Section */
+.display {
     background-color: white;
-    border-radius: 15px;
-    border-color: black;
-
-    text-align: right;
-}
-
-#previous{
-    color: rgb(65, 50, 53);
-    font-size: 15px;
-}
-#current{
-    font-size: 22px;
-}
-
-/* keyboard / Numbers section */
-.keyboard{
-    display: fixed;
-    margin-top: 15px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 2px solid black;
-    border-radius: 3px;
-    padding : 12px 12px;
-    
-    text-align: center; 
-    background-color: rgb(255, 255, 255);
-
-}
-
-button{
-    padding: 24px 24px;
-    font-size: 18px;
+    padding: 15px 10px;
     border-radius: 8px;
-    text-align: center;
-    display: fixed;
+    /* Fixed border */
+    border: 2px solid black; 
+    text-align: right;
+    margin-bottom: 15px;
+    /* Prevent text from overflowing */
+    word-wrap: break-word; 
+}
+
+#previous {
+    color: rgb(100, 100, 100); /* Slightly lighter for contrast */
+    font-size: 16px;
+    min-height: 20px; /* Keeps layout from jumping if empty */
+}
+
+#current {
+    font-size: 32px; /* Made slightly larger for readability */
+    font-weight: bold;
+    color: #313131;
+}
+
+/* Keyboard Section - USING CSS GRID */
+.keyboard {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    
+    /* CSS Grid is the secret to perfect calculator buttons */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Because we are using Grid, we can make the rows of numbers ignore standard grouping */
+.numbers, .operator {
+    display: contents; /* This lets the buttons inside act as direct grid children */
+}
+
+/* Button Styling */
+button {
+    padding: 20px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer; /* Changes mouse to a pointer hand */
+    transition: background-color 0.1s; /* Smooth color change on hover */
+}
+
+button:hover {
+    background-color: #eaeaea;
 }
 
 button:active {
     transform: scale(0.95);
+}
+
+/* Optional: Make the operators stand out */
+.op {
+    background-color: #ffb84d;
+    border-color: #e69900;
+}
+
+.op:hover {
+    background-color: #ffa31a;
 }
