@@ -9,39 +9,33 @@
 <body>
 
 <div class="inputBox">
-    <span class="title">Currency Conveter</span>
+    <span class="title">Currency Converter</span>
+    <span class="subtitle" id="rateDate">Loading rates…</span>
 
-    <div class="seletorOne">
-        <input type="number" id="firstInput">
-        <span>
-            <select name="Currency" id="x">
-                <option value="usd">usd</option>
-            </select>
-    </span>
+    <label>Amount</label>
+    <div class="row">
+        <input type="number" id="firstInput" value="1" />
+        <select id="x"></select>
     </div>
 
-<button id="swap">Swap</button>
-
-    <div class="seletorTwo">
-        <input type="number" id="secondInput">
-        <span>
-            <select name="Currency" id="y">
-                <option value="usd">usd</option>
-            </select>
-    </span>
+    <div class="divider">
+        <hr />
+        <button id="swap">⇅</button>
+        <hr />
     </div>
 
-<div class="change">
+    <label>Converted</label>
+    <div class="row">
+        <input type="number" id="secondInput" readonly />
+        <select id="y"></select>
+    </div>
+
+    <div class="rate-display" id="rateInfo">Select currencies to convert</div>
+
     <button id="convert">Convert</button>
 </div>
-</div>
-
-
-
-
-
-
 
  <script src="script.js"></script>   
+ 
 </body>
 </html>
